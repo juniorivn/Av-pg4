@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FAAE5908-4355-4448-BF8A-446C46E14E73}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Produtividade.cSharp</RootNamespace>
+    <AssemblyName>Produtividade.cSharp</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Casa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Casa.Designer.cs">
+      <DependentUpon>Casa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Conecta.cs" />
+    <Compile Include="Emprego.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Emprego.Designer.cs">
+      <DependentUpon>Emprego.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Estudos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estudos.Designer.cs">
+      <DependentUpon>Estudos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lazer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lazer.Designer.cs">
+      <DependentUpon>Lazer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prio_casa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prio_casa.Designer.cs">
+      <DependentUpon>Prio_casa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prio_emprego.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prio_emprego.Designer.cs">
+      <DependentUpon>Prio_emprego.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prio_estudo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prio_estudo.Designer.cs">
+      <DependentUpon>Prio_estudo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prio_lazer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prio_lazer.Designer.cs">
+      <DependentUpon>Prio_lazer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Casa.resx">
+      <DependentUpon>Casa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Emprego.resx">
+      <DependentUpon>Emprego.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estudos.resx">
+      <DependentUpon>Estudos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lazer.resx">
+      <DependentUpon>Lazer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prio_casa.resx">
+      <DependentUpon>Prio_casa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prio_emprego.resx">
+      <DependentUpon>Prio_emprego.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prio_estudo.resx">
+      <DependentUpon>Prio_estudo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prio_lazer.resx">
+      <DependentUpon>Prio_lazer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Conexao.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Conexao_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Conexao.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
